@@ -3,11 +3,11 @@
 /plugin/;
 
 / {
-	compatible = "brcm,bcm2708";
+	compatible = "brcm,bcm2708"; //Sets compatibility with Broadcom Driver 2708
 
-		fragment@0 {
+		fragment@0 {							//Defines "sound" node
 			target = <&sound>;
-			__overlay__{
+			__overlay__{						//Defines .compatible resource name in ak455.c
 			compatible = "asahi-kasei, ak4554";
 			};
 		};
