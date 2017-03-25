@@ -1,0 +1,14 @@
+// Definitions for ak4554vt (ak4554)
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2708";
+
+		fragment@0 {
+			target = <&sound>;
+			__overlay__{
+			compatible = "asahi-kasei, ak4554";
+			};
+		};
+	};
